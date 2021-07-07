@@ -42,12 +42,7 @@ class jogoClass
         $this->setResultado($resultado);
     }
 
-    public function conferirJogos()
-    {
-        //aqui o metodo vai conferir os jogos
-    }
-
-    public function gerarTabelaResultadio()
+    public function gerarTabeladeResultado()
     {
         $this->gerarJogoDaPessoa();
         $this->gerarResultadoSorteio();
@@ -132,4 +127,4 @@ class jogoClass
 }
 
 $teste = new jogoClass(8,4);
-echo $teste->gerarTabelaResultadio(); 
+echo $teste->gerarTabeladeResultado(); 
