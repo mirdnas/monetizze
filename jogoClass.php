@@ -20,6 +20,7 @@ class jogoClass
             $numeroRandomico = rand(1,60); 
             array_push($arrayNumericoJogo,$numeroRandomico);
         }    
+        sort($arrayNumericoJogo); 
         return $arrayNumericoJogo;
     }
 
