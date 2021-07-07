@@ -17,10 +17,11 @@ class jogoClass
         $arrayNumericoJogo = [];
         $dezenas = (empty($dezenas)) ? $this->getQuantidadeDezenas() : $dezenas;
         for ($i=1; $i <= $dezenas; $i++) { 
-            $numeroRandomico = rand(1,60); 
-            array_push($arrayNumericoJogo,$numeroRandomico);
+            $numeroRandomico = rand(1,60);  
+            $vetorDeNumeros[$numeroRandomico] = $numeroRandomico; 
+            array_push( $arrayNumericoJogo, $vetorDeNumeros[$numeroRandomico] );
         }    
-        sort($arrayNumericoJogo); 
+        sort($arrayNumericoJogo);  
         return $arrayNumericoJogo;
     }
 
